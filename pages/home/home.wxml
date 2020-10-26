@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button>Submit</button>
+<view>01_知识点1</view>
+<view>使用Git管理代码真好！</view>
