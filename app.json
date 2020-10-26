@@ -10,5 +10,22 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "Asset/icon/shouye_1.png",
+      "selectedIconPath": "Asset/icon/shouye.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "分类",
+      "iconPath": "Asset/icon/fenlei_1.png",
+      "selectedIconPath": "Asset/icon/fenlei.png"
+    }
+  ],
+  "selectedColor": "#ff5777"
   }
 }

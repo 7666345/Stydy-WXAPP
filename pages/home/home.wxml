@@ -1,11 +1,20 @@
 <!--pages/home/home.wxml-->
-<text class="title">小程序配置---window</text>
-<view>需要在app.json文件中配置window属性，默认如下：</view>
-<view> "window": {
-  "navigationBarBackgroundColor":"#ff5777", //设置小程序窗口顶部导航条的背景颜色，只能用十六进制颜色
-  "navigationBarTextStyle": "white", //设置顶部导航栏文字颜色，只支持黑色、白色
-  "navigationBarTitleText": "小程序", //顶部导航兰的标题文字内容
-  "backgroundColor": "#eeeeee", //页面下拉的时候，露出来的部分所显示的颜色
-  "backgroundTextStyle": "light", //下拉刷新时，页面重新加载的动画效果，有 light和dark
-  "enablePullDownRefresh": false //下拉页面的时候，刷新。默认为false
+<text class="title">小程序配置---tabBar</text>
+<view>需要在app.json文件中配置tabBar属性，默认如下：</view>
+<view>  "tabBar": {
+    "list": [  //list中的项就是底部菜单中的栏目，最少2个，最多5个。
+      {
+      "pagePath": "pages/home/home",  //设置菜单对应的页面跳转地址
+      "text": "首页",                 //设置菜单显示文字
+      "iconPath": "Asset/icon/shouye_1.png",  //菜单图标（未选中状态）
+      "selectedIconPath": "Asset/icon/shouye.png"  //菜单图标（被选中状态）
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "分类",
+      "iconPath": "Asset/icon/fenlei_1.png",
+      "selectedIconPath": "Asset/icon/fenlei.png"
+    }
+  ],
+  "selectedColor": "#ff5777"  //设置菜单被选中时，文字的颜色（此项不在list中）
   }</view>
