@@ -1,3 +1,6 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World!</text>
-<button>Submit</button>
+<text class="title">小程序初体验--1</text>
+<view>体验一： 数据绑定</view>
+<view>小程序语法中，绑定变量需要使用stuache语法，即双括号 “{{}}”,同时在页面.js文件的 date中定义相应变量</view>
+
+<view>你好，我的名字是：{{myName}}</view>
