@@ -1,3 +1,7 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World!</text>
-<button>Submit</button>
+<text class="title">小程序初体验三：事件监听</text>
+<view>如果需要监听按钮点击事件，需使用微信小程序的 bindtap语法</view>
+
+<view>counter：{{counter}}</view>
+
+<button size="mini" bindtap="onClickPlus">+++</button>
