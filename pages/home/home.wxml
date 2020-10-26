@@ -1,3 +1,8 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button>Submit</button>
+
+<view>知识点2</view>
+<view>可以使用如下git命令，回退代码版本:
+git reset + 版本号
+</view>
