@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World!</text>
-<button>Submit</button>
+<text class="title">小程序初体验二：遍历列表</text>
+<view>遍历数组，需要使用微信小程序的语法 wx:for</view>
+<view>玩家信息如下：</view>
+<view wx:for="{{players}}">{{item.name}} -- {{item.age}}</view>

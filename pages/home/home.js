@@ -6,6 +6,12 @@ Page({
    */
   data: {
 
+    players:[
+      {name:'Andy',age:19},
+      {name:'Bob',age:15},
+      {name:'Candy',age:17}
+    ]
+
   },
 
   /**
