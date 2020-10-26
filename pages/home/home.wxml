@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World!</text>
-<button>Submit</button>
+<text class="title">小程序配置---window</text>
+<view>需要在app.json文件中配置window属性，默认如下：</view>
+<view> "window": {
+  "navigationBarBackgroundColor":"#ff5777", //设置小程序窗口顶部导航条的背景颜色，只能用十六进制颜色
+  "navigationBarTextStyle": "white", //设置顶部导航栏文字颜色，只支持黑色、白色
+  "navigationBarTitleText": "小程序", //顶部导航兰的标题文字内容
+  "backgroundColor": "#eeeeee", //页面下拉的时候，露出来的部分所显示的颜色
+  "backgroundTextStyle": "light", //下拉刷新时，页面重新加载的动画效果，有 light和dark
+  "enablePullDownRefresh": false //下拉页面的时候，刷新。默认为false
+  }</view>
