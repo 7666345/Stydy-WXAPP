@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
-<button>Submit</button>
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">用户信息授权</button>
+<view>我的昵称是：{{myName}}</view>
+<view>我的城市：{{myCity}}</view>

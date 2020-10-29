@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    myName:'',
+    myCity:''
 
   },
 
@@ -62,5 +64,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**用户授权方法 */
+  handleGetUserInfo(e){
+    console.log(e.detail.userInfo)
+    this.setData({
+      myName:e.detail.userInfo.nickName,
+      myCity:e.detail.userInfo.province
+    })
   }
+
 })
