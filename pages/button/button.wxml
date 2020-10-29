@@ -1,0 +1,25 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml</text>
+
+<!-- button组件默认是块级元素，独占一行。可设置多种属性 -->
+<button>按钮</button>
+
+<!--属性1：size,设置按钮大小，按钮会变成行内块级元素-->
+<button size="mini">按钮</button>
+
+<!--属性2：type-->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!--属性3：plain,按钮镂空效果,默认为false，可以只写属性名不赋值，表示true-->
+<button size="mini" plain>按钮</button>
+
+<!--属性4：disabled,不可点击，可以只写属性名不赋值，表示true-->
+<button size="mini" disabled>按钮</button>
+
+<!--属性5：loading,加载状态，可以只写属性名不赋值，表示true-->
+<button size="mini" loading>按钮</button>
+
+<!--属性6：hove-class，可以设置按钮点下去时候的样式，需绑定wxss文件中所写的具体样式-->
+<button hover-class="buttonhove">按钮</button>

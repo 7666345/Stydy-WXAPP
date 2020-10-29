@@ -1,0 +1,6 @@
+/* pages/button/button.wxss */
+
+.buttonhove{
+  background-color: red;
+  color: white; 
+}
