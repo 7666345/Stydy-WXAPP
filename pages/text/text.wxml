@@ -1,0 +1,19 @@
+<!--pages/text/text.wxml-->
+<view>常用内置组件：Text</view>
+
+<!-- 1.text组件类似于span标签，属于行内元素。可以使用 \n 进行换行-->
+<text>Hello World\n</text>
+<text>你好\n\n</text>
+<!--2. text组件属性--selectable，设置文本是否可被选中，有2种写法：（注意设置时的语法）-->
+<text selectable="{{true}}">设置被选中写法一\n\n</text>
+<text selectable>设置可被选中的写法二（更推荐）\n\n</text>
+
+<!--3. text组件属性--space，设置文本中一个空格所占位置的大小，共3个值-->
+<text>Hello World\n</text>
+<text space="nbsp">Hello World\n</text> <!--根据字体设置的空格大小-->
+<text space="ensp">Hello World\n</text> <!--半个中文字符大小-->
+<text space="emsp">Hello World\n\n\n</text>  <!--一个中文字符大小-->
+
+<!--4. text组件属性--decode，设置文本内容是否可被解码，同selectable有2种写法-->
+<text>5 &gt; 3 \n</text>  <!--默认值为false，即不可解码-->
+<text decode>5 &gt; 3</text>
