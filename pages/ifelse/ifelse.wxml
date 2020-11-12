@@ -1,0 +1,16 @@
+<!--pages/ifelse/ifelse.wxml-->
+<view>逻辑判断</view>
+<!-- 1. wx:if ,值为true时，显示内容。值用{{}}包裹才生效-->
+<view wx:if="{{false}}">内容</view>
+
+<!-- 2. wx:elif  wx:else 多重判断 -->
+
+<view wx:if="{{myScore >= 90}}">优秀</view>
+<view wx:elif="{{myScore >= 80}}">优良</view>
+<view wx:elif="{{myScore >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- 补充：wx:if和hidden控制隐藏的区别。 -->
+<view hidden="{{true}}">hidden控制隐藏，后台回创建组件，但是用display=none隐藏不显示</view>
+<view>------------------</view>
+<view wx:if="{{false}}">wx:if 控制隐藏，系统不会创建该组件。</view>
