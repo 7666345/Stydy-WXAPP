@@ -1,0 +1,16 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 1. mustach--绑定变量 -->
+<view>{{myMessage}}</view>
+
+<!-- 2. 拼接字符串 -->
+<view>{{'你好，我是' +n1+ '。你好，他是' +n2}}</view>
+
+<!-- 3.三元运算 -->
+<view>{{myAge >= 18 ? '成年人' : '未成年'}}</view>
+
+<!--  综合示例:显示实时更新的时间信息 -->
+<view>当前时间：{{nowTime}}</view>
+
+<!-- 点击按钮，切换样式 -->
+<view class="{{isActive?'active':''}}">点按钮试试 </view>
+<button bindtap="toSwitchColor">切换</button>
