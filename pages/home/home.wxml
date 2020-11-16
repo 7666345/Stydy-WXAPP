@@ -36,3 +36,8 @@
  -->
 <view>计数:{{counter}}</view>
 <my-event bind:jiajia="handleClick" />
+
+<view class="h"></view>
+
+<!-- 综合练习 -->
+<h-tab-ctrl titles="{{['裤子','上衣','帽子']}}" bind:itemClick="handleTitleClick" />

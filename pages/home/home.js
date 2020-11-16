@@ -16,6 +16,13 @@ Page({
 
   },
 
+  // 监听组件发送过来的自定义事件
+  handleTitleClick(event){
+    //可以从event事件中的detail中获取传过来的参数，进行相应操作
+    console.log(event.detail.title)
+
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
