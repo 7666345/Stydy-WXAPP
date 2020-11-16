@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "mycpn":"/components/mycpn/mycpn",
+    "mystyle":"/components/mystyle/mystyle"
+  }
 }

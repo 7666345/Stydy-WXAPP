@@ -1,0 +1,12 @@
+/* components/mycpn.wxss */
+.myCpnTitle{
+  color: blueviolet;
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+
+.myCpnContent{
+  color: blanchedalmond;
+  font-size: 35rpx;
+  background-color: cyan;
+}

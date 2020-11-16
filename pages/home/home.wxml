@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World!</text>
+<view class="title">Hello World!</view>
 <button>Submit</button>
+
+<!-- 在页面中调用自定义组件需要两个步骤:
+    1. 在页面.json文件中的usingComponents中注册想要使用的组件，形式为键值对（自定义组件的标签：自定义组件路径）
+    2. 在页面需要的位置使用自定义组件的标签（.json文件中注册的） -->
+
+<mycpn></mycpn>
+
+<mystyle />

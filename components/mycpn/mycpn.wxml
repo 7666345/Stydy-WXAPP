@@ -1,0 +1,11 @@
+<!--自定义组件：
+    1. 命名一般由小写字母、-、_、数字组成
+    2. 不能以 wx- 作为前缀
+
+    自定义组件也包含.json、.wxss、wxml、js等文件组成，可以定制组件的样式、功能
+-->
+
+<view class="myCpnTitle">{{myCpnTitle}}</view>
+<view class="myCpnContent">{{myCpnContent}}</view>
+
+

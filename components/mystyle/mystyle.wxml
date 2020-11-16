@@ -1,0 +1,9 @@
+<!-- 默认时，组件内的样式和页面内的样式，是相互隔离的。
+      如果需要二者相互影响，可以在自定义组件的js文件中设置options
+         styleIsolation:"apply-shared 或 shared"
+       apply-shared：页面内样式可以影响自定义组件。（单向影响）
+       shared：页面内样式和组件内样式相互影响
+
+-->
+
+<view class="title">组件style的标题</view>
