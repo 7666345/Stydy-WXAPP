@@ -1,0 +1,19 @@
+<!-- 事件绑定的几种写法 -->
+<button size="mini" bindtap="handleBtnClick">绑定1</button>
+<button size="mini" bind:tap="handleBtnClick">绑定2</button>
+<button size="mini" catch:tap="handleBtnClick">绑定3</button>
+
+
+<!-- 事件传递参数:
+    data-参数名=“参数值”
+   -->
+<block class="continaer" wx:for="{{goods}}" wx:key="{{index}}">
+  <view class="item"
+        bind:tap="goodsClick"
+        data-index="{{index}}"
+        data-goodsname="{{item}}">
+        
+        {{index}}--{{item}}
+  </view>
+
+</block>
