@@ -8,4 +8,22 @@
 
 <mycpn></mycpn>
 
+<!-- 组件与页面的样式相关 -->
 <mystyle />
+
+<!-- 从页面向组件传递数据：
+    1. 组件js中定义好需要传递的数据名称及类型、默认值等
+    2. 组件页面中直接引用
+    3. 页面中用组件定义好的数据名称和类型，向组件传值。
+ -->
+<my-properties title="我是传递的数据111" /> 
+<my-properties title="我是传递的数据222" /> 
+<my-properties  /> 
+
+<!-- 向组件传递样式：
+        1、 组件页面和js中定义好需要传递的样式名称
+        2. 页面的样式中定义好需要传递的具体样式，名称同组件
+        3. 在页面中，用定义好的样式名称传递定义好的具体样式        
+ -->
+<my-properties title="传递红色样式"  titleclass="red" />
+<my-properties title="传递蓝色样式"  titleclass="blue" />

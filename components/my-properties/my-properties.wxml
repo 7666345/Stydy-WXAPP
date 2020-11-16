@@ -1,0 +1,3 @@
+<!--页面向组件传递数据：
+     在组件的js文件中，设置properties相关内容-->
+<view class="titleclass">{{title}}</view>

@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "mycpn":"/components/mycpn/mycpn",
-    "mystyle":"/components/mystyle/mystyle"
+    "mystyle":"/components/mystyle/mystyle",
+    "my-properties":"/components/my-properties/my-properties"
   }
 }

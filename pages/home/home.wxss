@@ -2,3 +2,12 @@
 .title{
   color: red;
 }
+
+/* 定义样式，传递给组件 */
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
