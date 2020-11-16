@@ -2,6 +2,7 @@
   "usingComponents": {
     "mycpn":"/components/mycpn/mycpn",
     "mystyle":"/components/mystyle/mystyle",
-    "my-properties":"/components/my-properties/my-properties"
+    "my-properties":"/components/my-properties/my-properties",
+    "my-event":"/components/my-event/my-event"
   }
 }

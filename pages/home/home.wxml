@@ -27,3 +27,12 @@
  -->
 <my-properties title="传递红色样式"  titleclass="red" />
 <my-properties title="传递蓝色样式"  titleclass="blue" />
+
+<!-- 从组件传递自定义事件:
+    1. 组件页面中监听事件，并定义监听函数
+    2. 组件js中，在监听函数中向页面中发射一个方法，让页面监听此方法，以获取控件状态。
+    3. 页面中监听组件发射出的方法（bind:发射出的方法名=“监听事件的方法”），并监听该方法
+    4. 页面js中，监听该方法并进行相应操作
+ -->
+<view>计数:{{counter}}</view>
+<my-event bind:jiajia="handleClick" />

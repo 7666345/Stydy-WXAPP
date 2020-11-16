@@ -1,0 +1,2 @@
+<!-- 从组件向页面传递自定义事件 -->
+<button bind:tap="handleClick">+1</button>

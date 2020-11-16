@@ -5,6 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    counter:0
+
+  },
+
+  handleClick(event){
+    this.setData({
+      counter:this.data.counter+1 
+    })
 
   },
 
