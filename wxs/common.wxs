@@ -1,0 +1,11 @@
+// wxs模块一般会单独存放，使用的时候在页面调用
+function priceToFixed(price,number){
+  var f_price=parseFloat(price); //强制转换为float类型
+  var num=number||2; //如果number为空，则使用默认值2
+
+  return f_price.toFixed(num);//内置函数toFixed可以截取小数点后几位
+}
+
+module.exports={
+  ptf:priceToFixed
+}

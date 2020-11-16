@@ -1,0 +1,21 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- WXS语法定义 -->
+<wxs module="info">
+  var myMessage='Hello World';
+  var jiafa=function (num1,num2) {
+    return num1+num2;
+  }
+  // wxs中的变量、函数等默认为私有，如需外部调用，需要声明，格式如下：
+  module.exports = {
+    message:myMessage,
+    jiafa:jiafa
+  }
+</wxs>
+
+<view>{{info.message}}</view>
+<view>{{info.jiafa(1,2)}}</view>
+
+
+<!-- wxs一般会单独写，然后在需要的页面引用 -->
+<wxs src="../../wxs/common.wxs" module="common"/>
+<view>{{common.ptf(123.7854)}}</view>

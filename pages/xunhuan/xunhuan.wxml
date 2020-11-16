@@ -1,0 +1,24 @@
+<!--pages/xunhuan/xunhuan.wxml-->
+<view>循环,渲染列表</view>
+<!-- wx:for 数组-->
+<view wx:for="{{['abc','sdfd','2fs32sdfsd']}}">{{index}} {{item}}</view>
+
+<!-- wx:for 字符串 -->
+<view wx:for="hello,world.">{{item}}</view>
+
+<!-- wx:for 数字 -->
+<view wx:for="{{5}}">{{item}}</view>
+
+<!-- 也可以指定循环几次view标签中的内容 -->
+<view wx:for="{{3}}">我是内容，view标签，按钮，等都可以</view>
+
+<!-- block标签,包裹用，不会渲染，比用view包裹更省资源 -->
+<block wx:if="{{false}}">
+  <view>内容1</view>
+  <button>按钮1</button>
+</block>
+
+<block wx:for="{{2 }}">
+  <view>111</view>
+  <view>222</view>
+</block>
