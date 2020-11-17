@@ -1,0 +1,9 @@
+<!--多插槽注意：
+    1. 需要给每个插槽设置name属性，页面中插入内容是要用slot=“name值”来指定插入插槽
+    2. 需要在组件js文件中设置options的multipleSlots：true
+-->
+<view>head</view>
+  <slot name="slot1"></slot>
+  <slot name="slot2"></slot>
+  <slot name="slot3"></slot>
+<view>foot</view>

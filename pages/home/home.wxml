@@ -52,3 +52,18 @@
 <my-slot>
     <button>插槽中的按钮</button>
 </my-slot>
+
+<view class="h"></view>
+<view>-------------</view>
+
+<!--多插槽使用：
+    1. 组件js中设置multipleSlot：true
+    2. 组件中给插槽指定name值
+    3. 页面中给内容指定插槽name值：slot=“插槽name”
+  -->
+
+<my-mslot>
+    <button size="mini" slot="slot3">确定</button>
+    <view slot="slot1">标题标题</view>
+    <slider slot="slot2" value="80"></slider>
+</my-mslot>

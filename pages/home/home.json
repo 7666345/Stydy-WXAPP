@@ -5,6 +5,7 @@
     "my-properties":"/components/my-properties/my-properties",
     "my-event":"/components/my-event/my-event",
     "h-tab-ctrl":"/components/h-tab-ctrl/h-tab-ctrl",
-    "my-slot":"/components/my-slot/my-slot"
+    "my-slot":"/components/my-slot/my-slot",
+    "my-mslot":"/components/my-mslot/my-mslot"
   }
 }
