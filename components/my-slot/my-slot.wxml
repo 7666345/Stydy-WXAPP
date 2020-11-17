@@ -1,0 +1,3 @@
+<view>head</view>
+<slot />
+<view>foot</view>

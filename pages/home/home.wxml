@@ -41,3 +41,14 @@
 
 <!-- 综合练习 -->
 <h-tab-ctrl titles="{{['裤子','上衣','帽子']}}" bind:itemClick="handleTitleClick" />
+
+<view class="h"></view>
+<view>-------------</view>
+
+<!-- 单个插槽的使用:
+    1. 组建中用<slot/>标签预留位置
+    2. 页面中注册组件并在标签内加入需要替换插槽为的内容
+ -->
+<my-slot>
+    <button>插槽中的按钮</button>
+</my-slot>
