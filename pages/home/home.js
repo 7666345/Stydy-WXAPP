@@ -12,55 +12,52 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 网络请求，一般在页面加载时，
+    // 使用系统API请求网络，wx:request
+    //学习阶段可以使用httpbin.org进行网络请求的模拟
 
-  },
+    //1. 普通get请求
+    // wx:wx.request({
+    //   url: 'http://httpbin.org/get',
+    //   success: (result) => {
+    //     console.log(result)
+    //   },
+    // })
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+    //2. 带参数的get请求
+    // wx:wx.request({
+    //   url: 'http://httpbin.org/get',
+    //   data: {
+    //     id:10002,
+    //     title:'时代峰峻阿喀琉斯的'
+    //   },
+    //   success: (result) => {
+    //     console.log(result)
+    //   }
+    // })
 
-  },
+    //3. post请求
+    // wx:wx.request({
+    //   url: 'http://httpbin.org/post',
+    //   method: 'post',
+    //   success: (result) => {
+    //     console.log(result)
+    //   }
+    // })
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+    //4. post请求，带参数
+    wx:wx.request({
+      url: 'http://httpbin.org/post',
+      method: 'post',
+      data: {
+        id:11
+      },
+      success: (result) => {
+        console.log(result)
+      },
+      fail: (res) => {},
+      complete: (res) => {},
+    })
 
   }
 })
