@@ -1,3 +1,14 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button>Submit</button>
+<!-- 1. Toast弹窗 -->
+<view><button size="mini" bind:tap="handleShowToast">Toast弹窗</button></view>
+
+<!-- 2. Modal弹窗 -->
+<view><button size="mini" bind:tap="handleShowModal">Modal弹窗</button></view>
+
+<!-- 3. Loding弹窗 -->
+<view><button size="mini" bind:tap="handleShowLoding">Loding弹窗</button></view>
+
+<!-- 4. actionSheet底部弹窗 -->
+<view><button size="mini" bind:tap="handleShowActionSheet">ActionSheet弹窗</button></view>
