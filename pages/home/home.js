@@ -2,65 +2,17 @@
 Page({
 
   /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
+   * 页面分享方式1：用户点击右上角分享
+   * 此方式要配置onShareAppMessage
+   * 
+   * 另有分享方式2： <button open-type='share'> 分享 </button>
    */
   onShareAppMessage: function () {
+    return{
+      title:'需要分享的标题内容',
+      path:'/pages/about/about', //这里的地址是被分享者点开以后，会展示的页面的路径。
+      imageUrl:''  //分享时显示的图片
+    }
 
   }
 })

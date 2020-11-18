@@ -1,3 +1,9 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button>Submit</button>
+
+
+<!-- 分享的第二种方法 -->
+<view>
+  <button size="mini" open-type="share">分享</button>
+</view>
