@@ -1,4 +1,4 @@
-// pages/home/home.js
+import request from '../../myService/network' //引入自定义封装的网络请求函数request
 Page({
 
   /**
@@ -46,18 +46,31 @@ Page({
     // })
 
     //4. post请求，带参数
-    wx:wx.request({
-      url: 'http://httpbin.org/post',
-      method: 'post',
-      data: {
-        id:11
-      },
-      success: (result) => {
-        console.log(result)
-      },
-      fail: (res) => {},
-      complete: (res) => {},
+    // wx:wx.request({
+    //   url: 'http://httpbin.org/post',
+    //   method: 'post',
+    //   data: {
+    //     id:11
+    //   },
+    //   success: (result) => {
+    //     console.log(result)
+    //   },
+    //   fail: (res) => {},
+    //   complete: (res) => {},
+    // })
+
+    // 5. 使用Promise方式调用自己封装的request函数，降低页面与系统API的耦合度：
+ 
+    request({
+      url:'http://httpbin.org/post',
+      method:'post'
+    }).then(res=>{
+      console.log(res)
+    }).catch(err=>{
+      console.log(err)
     })
+        
+
 
   }
 })
