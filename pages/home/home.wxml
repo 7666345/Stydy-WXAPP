@@ -21,3 +21,6 @@
 
 <!-- 详情页返回时修改上一页内容 -->
 <view>{{title}}</view>
+
+<!-- 页面跳转： 绑定事件 -->
+<button size="mini" bind:tap="handleToUrl">按钮跳转</button>

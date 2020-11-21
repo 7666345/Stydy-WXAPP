@@ -5,6 +5,16 @@ Page({
     title:"哈哈"
   },
 
+//按钮绑定事件，跳转
+//navigateTo,redirectTo,reLaunchTo等等方法，同navigator标签的open-type中属性值。
+handleToUrl(){
+  wx.re
+  wx.navigateTo({
+    url: '/pages/detail/detail?title="hehehe"',
+
+  })
+},
+
   //Toast弹窗
   handleShowToast(){
     wx.showToast({
