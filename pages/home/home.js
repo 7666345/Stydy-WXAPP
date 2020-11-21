@@ -1,6 +1,10 @@
 // pages/home/home.js
 Page({
 
+  data:{
+    title:"哈哈"
+  },
+
   //Toast弹窗
   handleShowToast(){
     wx.showToast({

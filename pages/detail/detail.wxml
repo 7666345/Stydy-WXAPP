@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+
+<!-- 返回上一层级（上一页），或返回指定层级
+      redirect、relaunch跳转的不能返回
+      delta指定跳转的层级数，默认1
+-->
+
+<navigator open-type="navigateBack" delta="2">返回</navigator>
