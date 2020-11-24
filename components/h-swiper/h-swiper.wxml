@@ -1,0 +1,12 @@
+  <!-- 轮播图 
+      circular="{{true}}" 轮播内容首尾衔接（循环滚动），可省略属性值。
+      autoplay="{{true}}" 轮播内容自动播放，可省略属性值
+      interval设置切换时间
+      indicator-dots是否显示图片指示点
+  -->
+  <swiper circular  autoplay indicator-dots easing-function="easeInOutCubic">
+    <block wx:for="{{itemList}}" wx:key="{{index}}">
+      <!-- mode="widthFix" 图片自适应 -->
+      <swiper-item><image mode="widthFix" src="{{item}}" alt=""/></swiper-item>
+    </block>
+  </swiper>
