@@ -1,0 +1,16 @@
+.maincontainer{
+  background: #F6F6F6;
+
+}
+
+/*弧形背景色*/
+.arc{
+  width:1340rpx;
+  height: 1340rpx;
+  background: #FF5B3D;
+  border-radius: 100%;
+  position:absolute;
+  transform:translate3d(-50%,-70%,0);
+  left:50%;
+  top:0;
+}

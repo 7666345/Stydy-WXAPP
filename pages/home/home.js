@@ -1,10 +1,13 @@
-// pages/home/home.js
+//获取APP对象实例
+const app=getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    "homeItems":['../../assets/images/1.jpg','../../assets/images/1.jpg','../../assets/images/1.jpg']
 
   },
 
@@ -12,7 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      
   },
 
   /**

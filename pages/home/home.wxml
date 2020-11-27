@@ -1,8 +1,42 @@
-<!--pages/home/home.wxml-->
-<text class="title">Hello World!</text>
-<button>Submit</button>
 
-<view>知识点2</view>
-<view>可以使用如下git命令，回退代码版本:
-git reset + 版本号
+<view class="maincontainer">
+<!-- 自定义头部 -->
+<h-topSearch></h-topSearch>
+<!-- 带颜色背景 -->
+<view class="arc"></view>
+  <!-- 头部轮播图 -->
+  <h-swiper itemList="{{homeItems}}"></h-swiper>
+
+  <!-- 优选精品 -->
+  <view class="Opt">
+    <view class="homeTitle">优选精品</view>
+    <view class="OptContent">
+      <view class="OptItem">
+          <image mode="heightFix" src="/assets/images/opt/opt_01.jpg"></image>
+          <text>适得府君书的</text>
+          <text class="OptPrice">26.9</text>
+      </view>
+      <view class="OptItem">
+          <image mode="heightFix" src="/assets/images/opt/opt_02.jpg"></image>
+          <text>适得府君书的</text>
+          <text class="OptPrice">26.9</text>
+      </view>
+      <view class="OptItem">
+          <image mode="heightFix" src="/assets/images/opt/opt_03.jpg"></image>
+          <text>适得府君书的</text>
+          <text class="OptPrice">26.9</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 扶贫优选 -->
+  <view class="fupin">
+    <view class="homeTitle">扶贫优选</view>
+    <view class="fupinContent">
+    
+    </view>
+
+  </view>
+
+
 </view>

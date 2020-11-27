@@ -1,1 +1,16 @@
-/* components/h-swiper/h-swiper.wxss */
+.h-swiper{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.h-swiperItems {
+
+  border-radius:25rpx;
+}
+
+.h-swiperItems image {
+  width: 712rpx;
+  height: 330rpx;
+  border-radius:25rpx;
+}

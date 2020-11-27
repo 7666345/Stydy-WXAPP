@@ -1,4 +1,44 @@
-/* pages/home/home.wxss */
-.title{
+.homeTitle{
+  padding-left: 40rpx;
+  padding-top: 20rpx;
+  font-weight: bolder;
+}
+
+/*优选精品 */
+.Opt{
+  width: 712rpx;
+  background-color: white;
+  border-radius:25rpx;
+  margin:  auto;
+}
+
+.OptContent{
+  padding: 40rpx;
+  display:flex;
+  text-align: center;
+
+}
+.OptItem{
+  flex: 1;
+}
+.OptItem image{
+  width: 200rpx;
+  height: 200rpx;
+
+}
+.OptItem text{
+  display: block;
+  font-size: small;
+}
+.OptPrice{
   color: red;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* 扶贫精选 */
+.fupin{
+  margin: 20rpx;
+  padding: 20rpx;
+
 }

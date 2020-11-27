@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "h-topSearch":"/components/h-topSearch/h-topSearch",
+    "h-swiper":"/components/h-swiper/h-swiper"
+  }
 }

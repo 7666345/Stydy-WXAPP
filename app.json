@@ -1,7 +1,48 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
+    "pages/cart/cart",
+    "pages/category/category",
+    "pages/profile/profile"
   ],
+
+  "window": {
+    "navigationBarBackgroundColor": "#FF5B3D",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "XX商城",
+    "navigationStyle": "custom"
+  },
+
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assets/tabs/icon_index.png",
+      "selectedIconPath": "assets/tabs/icon_index_select.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/tabs/icon_classify.png",
+        "selectedIconPath": "assets/tabs/icon_classify_select.png"
+        },
+        {
+          "pagePath": "pages/cart/cart",
+          "text": "购物车",
+          "iconPath": "assets/tabs/icon_shop.png",
+          "selectedIconPath": "assets/tabs/icon_shop_select.png"
+          },
+          {
+            "pagePath": "pages/profile/profile",
+            "text": "我的",
+            "iconPath": "assets/tabs/icon_my.png",
+            "selectedIconPath": "assets/tabs/icon_my-select.png"
+          }
+        ],
+        "selectedColor": "#FF5B3D"
+  },
+
+
   "sitemapLocation": "sitemap59.json"
 }

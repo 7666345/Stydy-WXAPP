@@ -4,9 +4,11 @@
       interval设置切换时间
       indicator-dots是否显示图片指示点
   -->
-  <swiper circular  autoplay indicator-dots easing-function="easeInOutCubic">
+<view class="h-swiper">
+  <swiper circular  autoplay indicator-dots >
     <block wx:for="{{itemList}}" wx:key="{{index}}">
       <!-- mode="widthFix" 图片自适应 -->
-      <swiper-item><image mode="widthFix" src="{{item}}" alt=""/></swiper-item>
+      <swiper-item class="h-swiperItems"><image mode="widthFix" src="{{item}}" alt=""/></swiper-item>
     </block>
   </swiper>
+</view>

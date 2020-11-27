@@ -1,0 +1,8 @@
+<view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      <view class="INinputheader">
+        <icon class="INsearchicon" type="search" size="12"/>
+        <input class="weui-input" placeholder="搜索商品"/>
+      </view>
+    </view>
+  </view>
